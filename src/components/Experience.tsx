@@ -78,7 +78,7 @@ const Experience = () => {
       title: "Google",
       subtitle: "Associate Cloud Engineer",
       date: "September 2024 - November 2024",
-      description: "Successfully completed Google Cloud Certified Associate Cloud Engineer program.",
+      description: "Successfully completed GCP3 Associate Cloud Engineer program, demonstrating proficiency in cloud infrastructure and services.",
       icon: <Briefcase size={20} className="text-white" />
     }
   ];
@@ -103,13 +103,6 @@ const Experience = () => {
       subtitle: "Senior Secondary School",
       date: "2020 - 2022",
       description: "Completed senior secondary education with focus on science and mathematics.",
-      icon: <GraduationCap size={20} className="text-white" />
-    },
-    {
-      title: "St. Peter's College",
-      subtitle: "Elementary School",
-      date: "2008 - 2020",
-      description: "Completed elementary and junior secondary education.",
       icon: <GraduationCap size={20} className="text-white" />
     }
   ];
@@ -154,7 +147,7 @@ const Experience = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
-            Experience & Education
+            Experience & Certifications
           </h2>
           <div 
             className={`w-20 h-1 gradient-bg mx-auto mb-4 transition-all duration-700 delay-100 ${
@@ -166,7 +159,7 @@ const Experience = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
-            My professional journey, educational background, and certifications.
+            My professional journey and certifications.
           </p>
         </div>
         
@@ -182,32 +175,6 @@ const Experience = () => {
           
           <div className="relative">
             {workExperience.map((item, index) => (
-              <TimelineItem
-                key={index}
-                isLeft={index % 2 === 0}
-                title={item.title}
-                subtitle={item.subtitle}
-                date={item.date}
-                description={item.description}
-                icon={item.icon}
-                isVisible={isVisible}
-              />
-            ))}
-          </div>
-        </div>
-        
-        {/* Education */}
-        <div className="mb-16">
-          <h3 
-            className={`text-2xl font-semibold mb-8 gradient-text inline-block transition-all duration-700 delay-400 ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
-          >
-            Education
-          </h3>
-          
-          <div className="relative">
-            {education.map((item, index) => (
               <TimelineItem
                 key={index}
                 isLeft={index % 2 === 0}

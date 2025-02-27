@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { FileDown, ExternalLink, Code } from 'lucide-react';
+import { FileDown, ExternalLink, Code, GraduationCap } from 'lucide-react';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -20,6 +20,19 @@ const About = () => {
     handleScroll(); // Check on initial load
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const education = [
+    {
+      degree: "Bachelor of Technology in Computer Science (AIML)",
+      institution: "Sharda University",
+      period: "2022 - 2026"
+    },
+    {
+      degree: "CS50 – Computer Science",
+      institution: "Harvard University",
+      period: "2023"
+    }
+  ];
 
   return (
     <section id="about" className="py-20 px-4">
@@ -45,6 +58,24 @@ const About = () => {
               technology and AI underline his ability to lead, solve complex problems, and contribute 
               significantly to impactful projects.
             </p>
+            
+            {/* Education Section */}
+            <div className="mb-8">
+              <h3 className="text-xl font-semibold flex items-center mb-4">
+                <GraduationCap className="mr-2" />
+                Education
+              </h3>
+              
+              <div className="space-y-4">
+                {education.map((item, index) => (
+                  <div key={index} className="border-l-2 border-portfolio-accent1 pl-4 py-1">
+                    <h4 className="text-lg font-medium">{item.degree}</h4>
+                    <p className="text-white/70">{item.institution}</p>
+                    <p className="text-white/60 text-sm">{item.period}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
