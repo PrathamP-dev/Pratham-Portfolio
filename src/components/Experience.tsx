@@ -108,29 +108,8 @@ const Experience = () => {
     }
   ];
 
-  const certifications = [
-    {
-      title: "Google",
-      subtitle: "Introduction to Responsible AI",
-      date: "2024",
-      description: "Badge for understanding the principles of responsible AI development.",
-      icon: <Award size={20} className="text-white" />
-    },
-    {
-      title: "Microsoft",
-      subtitle: "Fundamental AI Concepts",
-      date: "2023",
-      description: "Certification for understanding the foundational concepts in AI.",
-      icon: <Award size={20} className="text-white" />
-    },
-    {
-      title: "Google",
-      subtitle: "Fundamentals of Machine Learning",
-      date: "2023",
-      description: "Certification for machine learning fundamentals and implementation.",
-      icon: <Award size={20} className="text-white" />
-    }
-  ];
+  // Empty certifications array as requested
+  const certifications = [];
 
   return (
     <section id="experience" className="py-20 px-4">
@@ -193,21 +172,7 @@ const Experience = () => {
             Certifications
           </h3>
           
-          {/* Certification Timeline Items */}
-          <div className="relative mb-12">
-            {certifications.map((item, index) => (
-              <TimelineItem
-                key={index}
-                isLeft={index % 2 === 0}
-                title={item.title}
-                subtitle={item.subtitle}
-                date={item.date}
-                description={item.description}
-                icon={item.icon}
-                isVisible={isVisible}
-              />
-            ))}
-          </div>
+          {/* Certification Timeline Items - removed as requested */}
           
           {/* Certification Carousel */}
           <CertificationsCarousel isVisible={isVisible} />
