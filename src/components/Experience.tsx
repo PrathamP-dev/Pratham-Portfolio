@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Briefcase, GraduationCap, Award } from 'lucide-react';
+import CertificationsCarousel from './CertificationsCarousel';
 
 interface TimelineItemProps {
   isLeft: boolean;
@@ -199,7 +200,8 @@ const Experience = () => {
             Certifications
           </h3>
           
-          <div className="relative">
+          {/* Certification Timeline Items */}
+          <div className="relative mb-12">
             {certifications.map((item, index) => (
               <TimelineItem
                 key={index}
@@ -213,6 +215,9 @@ const Experience = () => {
               />
             ))}
           </div>
+          
+          {/* Certification Carousel */}
+          <CertificationsCarousel isVisible={isVisible} />
         </div>
       </div>
     </section>
