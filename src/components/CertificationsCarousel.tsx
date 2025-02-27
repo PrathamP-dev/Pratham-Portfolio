@@ -17,6 +17,7 @@ const CertificationsCarousel = ({ isVisible }: CertificationsCarouselProps) => {
   
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
   const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
+  const [enlargedImageIndex, setEnlargedImageIndex] = useState<number | null>(null);
 
   // Function to scroll to previous slide
   const scrollPrev = useCallback(() => {
@@ -41,6 +42,24 @@ const CertificationsCarousel = ({ isVisible }: CertificationsCarouselProps) => {
     emblaApi.on('select', onSelect);
     emblaApi.on('reInit', onSelect);
   }, [emblaApi, onSelect]);
+
+  // Function to toggle enlargement of an image
+  const toggleEnlarge = (index: number) => {
+    setEnlargedImageIndex(enlargedImageIndex === index ? null : index);
+  };
+
+  // Close enlarged image when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if (enlargedImageIndex !== null && !target.closest('.enlarge-container')) {
+        setEnlargedImageIndex(null);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [enlargedImageIndex]);
 
   // Certification images
   const certificationImages = [
@@ -117,7 +136,10 @@ const CertificationsCarousel = ({ isVisible }: CertificationsCarouselProps) => {
           <div className="flex">
             {certificationImages.map((image, index) => (
               <div key={index} className="flex-[0_0_85%] sm:flex-[0_0_45%] md:flex-[0_0_33.333%] lg:flex-[0_0_25%] min-w-0 pl-4">
-                <div className="relative group">
+                <div 
+                  className="relative group cursor-pointer enlarge-container"
+                  onClick={() => toggleEnlarge(index)}
+                >
                   <div className="w-full h-full aspect-[3/4] overflow-hidden bg-white/5 rounded-lg glass-card p-2 transition-all duration-300 hover:shadow-lg hover:shadow-portfolio-accent1/20">
                     <img 
                       src={image} 
@@ -132,6 +154,34 @@ const CertificationsCarousel = ({ isVisible }: CertificationsCarouselProps) => {
           </div>
         </div>
       </div>
+
+      {/* Enlarged Image Modal */}
+      {enlargedImageIndex !== null && (
+        <div 
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 backdrop-blur-sm"
+          onClick={() => setEnlargedImageIndex(null)}
+        >
+          <div 
+            className="enlarge-container relative max-w-3xl max-h-[90vh] w-[90%] p-4 animate-scale-in"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img 
+              src={certificationImages[enlargedImageIndex]} 
+              alt={`Enlarged certification ${enlargedImageIndex + 1}`} 
+              className="w-full h-full object-contain rounded-lg"
+            />
+            <button 
+              onClick={() => setEnlargedImageIndex(null)}
+              className="absolute top-2 right-2 bg-white/10 backdrop-blur-sm rounded-full p-2 text-white hover:bg-white/20 transition-all duration-300"
+              aria-label="Close enlarged view"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

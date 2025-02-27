@@ -110,13 +110,6 @@ const Experience = () => {
 
   const certifications = [
     {
-      title: "Google Cloud",
-      subtitle: "Generative AI Badge",
-      date: "2024",
-      description: "Certification for proficiency in Generative AI on Google Cloud.",
-      icon: <Award size={20} className="text-white" />
-    },
-    {
       title: "Google",
       subtitle: "Introduction to Responsible AI",
       date: "2024",
