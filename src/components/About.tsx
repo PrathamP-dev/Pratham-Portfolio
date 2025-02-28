@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { FileDown, ExternalLink, Code, GraduationCap } from 'lucide-react';
+import { FileDown, GraduationCap, Code } from 'lucide-react';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -77,24 +77,15 @@ const About = () => {
               </div>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex">
               <a 
-                href="/resume.pdf" 
-                download 
+                href="https://drive.google.com/file/d/1MJB6qi2yOMJu5R6t6SPFLKmKlwUTEtaz/view?usp=sharing" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 px-5 py-3 rounded-full gradient-bg text-white font-medium transition-transform hover:scale-105"
               >
                 <FileDown size={18} />
                 Download Resume
-              </a>
-              
-              <a 
-                href="/resume.pdf" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-transparent border border-white/30 text-white font-medium transition-all hover:border-portfolio-accent1"
-              >
-                <ExternalLink size={18} />
-                Preview Resume
               </a>
             </div>
           </div>
