@@ -1,54 +1,23 @@
-# Welcome to your Lovable project
+Pratham Pujya Sharma's Portfolio
+Welcome to my personal portfolio! This project showcases my skills, experience, and work in a beautifully designed web application. It is built using the latest web technologies and is fully responsive, providing a seamless experience across devices.
 
-## Project info
+🚀 Check out the live version of my portfolio here:
+pratham-pujya-sharma.netlify.app
 
-**URL**: https://lovable.dev/projects/b5429aa0-ce3a-4556-9d2b-882d496c8dd5
+🔧 Tech Stack
+This portfolio is built using the following technologies:
 
-## How can I edit this code?
+Vite – A next-generation, fast development build tool.
+TypeScript – A superset of JavaScript that adds static types, improving developer experience and code quality.
+React – A JavaScript library for building user interfaces, used for creating a dynamic, component-driven design.
+Shadcn-UI – A component library designed to speed up UI development with accessibility and customization in mind.
+Tailwind CSS – A utility-first CSS framework used for styling, making the design process faster and more flexible.
+⚡ Features
+Responsive Design: Looks great on both desktop and mobile devices.
+Dynamic UI: A modern user interface with smooth animations and transitions.
+Customizable: Built with flexibility in mind, allowing for easy customization.
+Fast Loading: Thanks to Vite and optimized code, the portfolio loads quickly.
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/b5429aa0-ce3a-4556-9d2b-882d496c8dd5) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
 
 ## What technologies are used for this project?
 
