@@ -1,3 +1,4 @@
+
 # Pratham Pujya Sharma's Portfolio
 
 Welcome to my personal portfolio! This project showcases my skills, experience, and work in a beautifully designed web application. It is built using the latest web technologies and is fully responsive, providing a seamless experience across devices.
@@ -22,12 +23,13 @@ This portfolio is built using the following technologies:
 
 - **Responsive Design**: Looks great on both desktop and mobile devices.
 - **Dynamic UI**: A modern user interface with smooth animations and transitions.
+- **SEO Optimized**: Properly structured for search engines to improve visibility.
 - **Customizable**: Built with flexibility in mind, allowing for easy customization.
 - **Fast Loading**: Thanks to Vite and optimized code, the portfolio loads quickly.
 
 ## What technologies are used for this project?
 
-This project is built with .
+This project is built with:
 
 - Vite
 - TypeScript
@@ -41,3 +43,7 @@ Feel free to reach out or connect with me on:
 
 - **LinkedIn**: [www.linkedin.com/in/pratham-p-sharma](https://www.linkedin.com/in/pratham-p-sharma)
 - **Email**: [Prathamp.Sharma.02@gmail.com](mailto:Prathamp.Sharma.02@gmail.com)
+
+## Keywords
+
+Pratham Portfolio, Pratham P. Sharma, Pratham Pujya Sharma, AI/ML Specialist, Cloud Computing Expert, GCP, AWS, DevOps, Computer Science Student

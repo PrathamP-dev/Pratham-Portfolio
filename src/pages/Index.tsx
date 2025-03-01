@@ -16,16 +16,27 @@ const Index = () => {
     if (metaDescription) {
       metaDescription.setAttribute("content", "Portfolio of Pratham P. Sharma, a Computer Science undergraduate specializing in AI/ML and Cloud Computing. Discover my skills, projects, and professional experience.");
     }
+    
+    // Update keywords meta tag
+    let metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (!metaKeywords) {
+      metaKeywords = document.createElement('meta');
+      metaKeywords.setAttribute('name', 'keywords');
+      document.head.appendChild(metaKeywords);
+    }
+    metaKeywords.setAttribute('content', 'Pratham portfolio, Pratham P. Sharma, Pratham Pujya Sharma, AI/ML specialist, Cloud Computing, GCP, AWS, Java, Python');
   }, []);
 
   return (
     <div className="min-h-screen bg-portfolio-bg text-white overflow-x-hidden">
       <Header />
-      <Hero />
-      <About />
-      <Skills />
-      <Experience />
-      <Contact />
+      <main id="content">
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );

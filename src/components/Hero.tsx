@@ -21,6 +21,7 @@ const Hero = () => {
     <section 
       id="home" 
       className="relative h-screen flex flex-col items-center justify-center px-4 overflow-hidden"
+      aria-label="Introduction"
     >
       {/* Tech Bubbles */}
       {techBubbles.map((bubble, index) => (
@@ -34,6 +35,7 @@ const Hero = () => {
             bottom: bubble.bottom,
             animationDelay: `${index * 0.5}s`
           }}
+          aria-hidden="true"
         >
           {bubble.icon}
         </div>
@@ -49,13 +51,14 @@ const Hero = () => {
           Pratham P. <span className="gradient-text">Sharma</span>
         </h1>
         <div className="reveal-code text-xl md:text-2xl mb-8">
-          Specialized in AI/ML & Cloud Computing
+          <span itemProp="jobTitle">Specialized in AI/ML & Cloud Computing</span>
         </div>
         
         <div className="flex flex-col md:flex-row gap-4 justify-center mt-8">
           <a 
             href="#about" 
             className="px-6 py-3 rounded-full gradient-bg text-white font-medium transition-transform hover:scale-105"
+            aria-label="Learn more about Pratham P. Sharma"
           >
             About Me
           </a>
@@ -63,6 +66,7 @@ const Hero = () => {
           <a 
             href="#contact" 
             className="px-6 py-3 rounded-full bg-transparent border border-white/30 text-white font-medium transition-all hover:border-portfolio-accent1"
+            aria-label="Contact Pratham P. Sharma"
           >
             Get in Touch
           </a>
@@ -72,6 +76,7 @@ const Hero = () => {
       <a 
         href="#about" 
         className="absolute bottom-10 left-1/2 transform -translate-x-1/2 bg-white/10 p-3 rounded-full animate-float"
+        aria-label="Scroll down to about section"
       >
         <ArrowDown size={24} className="text-white/80" />
       </a>
