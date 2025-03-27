@@ -69,6 +69,13 @@ const Experience = () => {
 
   const workExperience = [
     {
+      title: "Google Summer of Code",
+      subtitle: "BIG DADDIES (Remote)",
+      date: "March 2025 - Present",
+      description: "Managing the codebase for the BIG DADDIES project and overseeing the full software development lifecycle. Collaborating with developers to implement new features and optimize existing code. Ensuring project goals are met by maintaining high standards of software quality and performance.",
+      icon: <Briefcase size={20} className="text-white" />
+    },
+    {
       title: "Google Cloud Community India",
       subtitle: "Arcade Facilitator",
       date: "June 2024 - Present",
