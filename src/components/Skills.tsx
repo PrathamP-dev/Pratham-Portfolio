@@ -67,6 +67,7 @@ const Skills = () => {
         { name: "GCP", icon: "/icons/gcp.svg" },
         { name: "AWS", icon: "/icons/aws.svg" },
         { name: "Virtual Machines", icon: "/icons/vm.svg" },
+        { name: "Docker", icon: "/icons/docker.svg" },
       ]
     },
     {
