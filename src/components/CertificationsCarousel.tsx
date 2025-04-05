@@ -63,6 +63,7 @@ const CertificationsCarousel = ({ isVisible }: CertificationsCarouselProps) => {
 
   // Certification images
   const certificationImages = [
+    "/lovable-uploads/emotional-intelligence-cert.png",
     "/lovable-uploads/e781d855-01d8-48eb-9cb6-ca9f1f38dce3.png",
     "/lovable-uploads/f83d624f-26c8-4438-89b8-0d80152b0bcd.png",
     "/lovable-uploads/94b648ff-3f65-4a31-b5b6-06f62e54b400.png",
