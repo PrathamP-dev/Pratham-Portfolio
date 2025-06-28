@@ -24,12 +24,12 @@ const About = () => {
     {
       degree: "Bachelor of Technology in Computer Science (AIML)",
       institution: "Sharda University",
-      period: "2024 - Pursuing"
+      period: "2024 - 2028"
     },
     {
       degree: "CS50 – Computer Science",
       institution: "Harvard University",
-      period: "2024 - Pursuing"
+      period: "2024"
     }
   ];
 
