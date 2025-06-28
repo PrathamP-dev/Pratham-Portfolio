@@ -79,7 +79,7 @@ const Projects = () => {
     {
       title: "Bandhutva — LinkedIn Connection Manager",
       description: "Browser extension enabling bulk accept/reject of LinkedIn connection requests with intuitive UI enhancements.",
-      githubUrl: "https://github.com/PrathamP-dev/Bandhutva-LinkedIn-Manager",
+      githubUrl: "https://github.com/PrathamP-dev/Bandhutva",
       liveUrl: "https://addons.mozilla.org/en-US/firefox/addon/bandhutva/",
     },
     {
