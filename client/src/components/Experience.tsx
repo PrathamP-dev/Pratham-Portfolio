@@ -72,7 +72,7 @@ const Experience = () => {
       title: "DevOps Intern",
       subtitle: "Paytm",
       date: "May 2025 - Jul 2025",
-      description: "Automated GPU provisioning on Lambda Labs with Terraform & Terragrunt, reducing infra setup time by 80%. Deployed scalable LLM inference pipelines for Ollama 3.3 8B/70B models on multi-GPU A100 servers using SGLang, boosting throughput by 30% via Tensor/Data Parallelism and Key-Value Caching. Created optimized Dockerfiles (25% smaller images) and Docker Compose setups, accelerating local environment setup by 30%. Automated log rotation, system backups, and container cleanup with Bash scripts, reducing manual overhead by 50%. Integrated Terratest for infrastructure validation, enhancing IaC reliability and deployment consistency. Resolved CI/CD pipeline environment mismatches, reducing integration issues by 50%.",
+      description: "Automated GPU provisioning with Terraform & Terragrunt, reducing setup time by 80%. Deployed scalable LLM inference pipelines using SGLang, boosting throughput by 30%. Created optimized Docker environments and automated system operations with Bash scripts.",
       icon: <Briefcase size={20} className="text-white" />
     },
     {
@@ -95,14 +95,14 @@ const Experience = () => {
     {
       title: "Sharda University",
       subtitle: "B.Tech in Computer Science (AIML)",
-      date: "2024 - Pursuing",
+      date: "2024 - 2028",
       description: "Specializing in Artificial Intelligence and Machine Learning.",
       icon: <GraduationCap size={20} className="text-white" />
     },
     {
       title: "Harvard University",
       subtitle: "Computer Science",
-      date: "2024 - Pursuing",
+      date: "2024",
       description: "Comprehensive introduction to computer science principles and programming.",
       icon: <GraduationCap size={20} className="text-white" />
     },
