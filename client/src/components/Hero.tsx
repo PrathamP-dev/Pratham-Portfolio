@@ -51,7 +51,7 @@ const Hero = () => {
           Pratham P. <span className="gradient-text">Sharma</span>
         </h1>
         <div className="reveal-code text-xl md:text-2xl mb-8">
-          <span itemProp="jobTitle">Specialized in AI/ML & Cloud Computing</span>
+          <span itemProp="jobTitle">Specialized in AI/ML, Cloud Computing & DevOps</span>
         </div>
         
         <div className="flex flex-col md:flex-row gap-4 justify-center mt-8">
