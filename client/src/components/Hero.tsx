@@ -30,13 +30,13 @@ const Hero = () => {
       </div>
       
       {/* Enhanced floating bubbles for hero */}
-      <FloatingBubbles section="hero" density="heavy" />
+      <FloatingBubbles section="hero" density="medium" />
       
-      {/* Tech Bubbles */}
+      {/* Tech Bubbles - converted to white theme to match original */}
       {techBubbles.map((bubble, index) => (
         <div 
           key={index}
-          className={`tech-bubble ${bubble.size} flex items-center justify-center tech-bubble-enhanced`}
+          className={`tech-bubble ${bubble.size} flex items-center justify-center`}
           style={{
             top: bubble.top,
             left: bubble.left,
@@ -46,7 +46,9 @@ const Hero = () => {
           }}
           aria-hidden="true"
         >
-          {bubble.icon}
+          <div className="text-white/80">
+            {bubble.icon}
+          </div>
         </div>
       ))}
       

@@ -189,10 +189,10 @@ export default {
             transform: "translateY(0px) rotate(0deg)",
           },
           "33%": {
-            transform: "translateY(-15px) rotate(120deg)",
+            transform: "translateY(-8px) rotate(60deg)",
           },
           "66%": {
-            transform: "translateY(8px) rotate(240deg)",
+            transform: "translateY(5px) rotate(120deg)",
           },
         },
       },
@@ -209,7 +209,7 @@ export default {
         "float-cloud-reverse": "float-cloud-reverse 25s ease-in-out infinite",
         "float": "float 3s ease-in-out infinite",
         "name-cloud-glow": "name-cloud-glow 8s ease-in-out infinite",
-        "float-bubble": "float-bubble 6s ease-in-out infinite",
+        "float-bubble": "float-bubble 8s ease-in-out infinite",
       },
     },
   },

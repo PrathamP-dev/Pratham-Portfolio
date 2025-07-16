@@ -77,37 +77,61 @@ const FloatingBubbles = ({ section = 'general', density = 'medium' }: FloatingBu
   const getBubbleCount = (densityLevel: string) => {
     switch (densityLevel) {
       case 'light': return 3;
-      case 'medium': return 5;
-      case 'heavy': return 8;
-      default: return 5;
+      case 'medium': return 4;
+      case 'heavy': return 5; // Reduced from 8 to 5
+      default: return 4;
     }
   };
 
   const icons = getIcons(section);
   const bubbleCount = getBubbleCount(density);
 
-  const generateBubbleStyle = (index: number) => {
-    const positions = [
-      { top: '10%', left: '5%' },
-      { top: '25%', right: '8%' },
-      { bottom: '15%', left: '12%' },
-      { top: '60%', right: '15%' },
-      { bottom: '35%', right: '5%' },
-      { top: '40%', left: '8%' },
-      { bottom: '60%', right: '20%' },
-      { top: '15%', left: '25%' },
-    ];
+  const generateBubbleStyle = (index: number, sectionType: string) => {
+    // Better positioning to avoid text overlap
+    const positions = {
+      hero: [
+        { top: '10%', left: '5%' },
+        { top: '20%', right: '10%' },
+        { bottom: '25%', left: '8%' },
+        { top: '70%', right: '15%' },
+        { bottom: '10%', right: '5%' },
+      ],
+      about: [
+        { top: '15%', left: '5%' },
+        { top: '30%', right: '8%' },
+        { bottom: '20%', left: '10%' },
+      ],
+      skills: [
+        { top: '12%', left: '3%' },
+        { top: '35%', right: '5%' },
+        { bottom: '15%', left: '7%' },
+        { top: '60%', right: '12%' },
+        { bottom: '40%', right: '8%' },
+      ],
+      contact: [
+        { top: '20%', left: '8%' },
+        { top: '50%', right: '10%' },
+        { bottom: '25%', left: '12%' },
+        { bottom: '10%', right: '6%' },
+      ],
+      default: [
+        { top: '15%', left: '6%' },
+        { top: '40%', right: '10%' },
+        { bottom: '20%', left: '8%' },
+      ]
+    };
 
-    return positions[index % positions.length];
+    const sectionPositions = positions[sectionType as keyof typeof positions] || positions.default;
+    return sectionPositions[index % sectionPositions.length];
   };
 
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden">
       {Array.from({ length: bubbleCount }).map((_, index) => {
         const icon = icons[index % icons.length];
-        const style = generateBubbleStyle(index);
-        const size = Math.random() > 0.5 ? 'w-12 h-12' : 'w-10 h-10';
-        const delay = index * 0.8;
+        const style = generateBubbleStyle(index, section);
+        const size = index % 2 === 0 ? 'w-10 h-10' : 'w-8 h-8'; // More consistent sizing
+        const delay = index * 1.2;
         
         return (
           <div
