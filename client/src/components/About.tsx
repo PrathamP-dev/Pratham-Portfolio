@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { FileDown, GraduationCap, Code } from 'lucide-react';
-import FloatingBubbles from './FloatingBubbles';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -35,8 +34,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 px-4 relative">
-      <FloatingBubbles section="about" density="light" />
+    <section id="about" className="py-20 px-4">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row gap-10 items-center">
           <div 

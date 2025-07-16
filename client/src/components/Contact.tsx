@@ -2,7 +2,6 @@
 import { useState, useEffect } from 'react';
 import { Mail, Linkedin, Github, Send } from 'lucide-react';
 import { useToast } from '../hooks/use-toast';
-import FloatingBubbles from './FloatingBubbles';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -90,8 +89,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 bg-black/30 relative">
-      <FloatingBubbles section="contact" density="light" />
+    <section id="contact" className="py-20 px-4 bg-black/30">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 

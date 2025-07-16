@@ -30,48 +30,14 @@ const FloatingBubbles = ({ section = 'general', density = 'medium' }: FloatingBu
     return () => clearTimeout(timer);
   }, []);
 
-  const getIcons = (sectionType: string) => {
-    switch (sectionType) {
-      case 'hero':
-        return [
-          { icon: <Code size={16} />, symbol: '</>' },
-          { icon: <Infinity size={16} />, symbol: '∞' },
-          { icon: <Cloud size={16} />, symbol: '☁' },
-          { icon: <Database size={16} />, symbol: '⚡' },
-          { icon: <Server size={16} />, symbol: '🔧' },
-          { icon: <Terminal size={16} />, symbol: '$' },
-        ];
-      case 'about':
-        return [
-          { icon: <GitBranch size={16} />, symbol: 'git' },
-          { icon: <Cpu size={16} />, symbol: 'AI' },
-          { icon: <Globe size={16} />, symbol: 'www' },
-          { icon: <Shield size={16} />, symbol: '🛡' },
-          { icon: <Layers size={16} />, symbol: '⚙' },
-        ];
-      case 'skills':
-        return [
-          { icon: <Container size={16} />, symbol: '🐳' },
-          { icon: <Settings size={16} />, symbol: 'K8s' },
-          { icon: <Zap size={16} />, symbol: 'ML' },
-          { icon: <FileCode size={16} />, symbol: 'JS' },
-          { icon: <Terminal size={16} />, symbol: 'py' },
-        ];
-      case 'contact':
-        return [
-          { icon: <Globe size={16} />, symbol: '@' },
-          { icon: <GitBranch size={16} />, symbol: 'git' },
-          { icon: <Code size={16} />, symbol: '{}' },
-          { icon: <Infinity size={16} />, symbol: '∞' },
-        ];
-      default:
-        return [
-          { icon: <Code size={16} />, symbol: '</>' },
-          { icon: <Database size={16} />, symbol: 'DB' },
-          { icon: <Cloud size={16} />, symbol: '☁' },
-          { icon: <Infinity size={16} />, symbol: '∞' },
-        ];
-    }
+  const getIcons = () => {
+    return [
+      { icon: <Infinity size={16} />, symbol: '∞' },
+      { icon: <Code size={16} />, symbol: '</>' },
+      { icon: <Terminal size={16} />, symbol: '>_' },
+      { icon: <GitBranch size={16} />, symbol: 'git' },
+      { icon: <Server size={16} />, symbol: 'DevOps' },
+    ];
   };
 
   const getBubbleCount = (densityLevel: string) => {
@@ -83,7 +49,7 @@ const FloatingBubbles = ({ section = 'general', density = 'medium' }: FloatingBu
     }
   };
 
-  const icons = getIcons(section);
+  const icons = getIcons();
   const bubbleCount = getBubbleCount(density);
 
   const generateBubbleStyle = (index: number, sectionType: string) => {
