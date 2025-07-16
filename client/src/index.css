@@ -130,7 +130,7 @@
     font-family: monospace;
     overflow: hidden;
     white-space: nowrap;
-    color: #4b8f8d;
+    color: #f97316;
   }
   
   .reveal-code::after {
@@ -140,7 +140,7 @@
     right: -5px;
     width: 5px;
     height: 100%;
-    background-color: #4b8f8d;
+    background-color: #f97316;
     animation: blink 1s infinite;
   }
   
@@ -199,10 +199,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #2b7b99, #4b8f8d);
+  background: linear-gradient(to bottom, #f97316, #fb923c);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #4b8f8d, #2b7b99);
+  background: linear-gradient(to bottom, #fb923c, #f97316);
 }
