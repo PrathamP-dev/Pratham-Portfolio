@@ -23,10 +23,9 @@ const Hero = () => {
       className="relative h-screen flex flex-col items-center justify-center px-4 overflow-hidden"
       aria-label="Introduction"
     >
-      {/* Background gradient cloud */}
+      {/* Background gradient cloud focused around name */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="gradient-cloud"></div>
-        <div className="gradient-cloud-2"></div>
+        <div className="name-focused-cloud"></div>
       </div>
       
       {/* Tech Bubbles */}
@@ -54,9 +53,8 @@ const Hero = () => {
       >
         <p className="text-lg md:text-xl text-white/70 mb-3">Hello, I'm</p>
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 relative">
-          <span className="relative inline-block">
-            <span className="glass-name-effect">Pratham P.</span>
-            <span className="gradient-text glass-name-effect ml-2">Sharma</span>
+          <span className="relative inline-block glass-name-effect">
+            Pratham P. <span className="gradient-text">Sharma</span>
           </span>
         </h1>
         <div className="reveal-code text-xl md:text-2xl mb-8">

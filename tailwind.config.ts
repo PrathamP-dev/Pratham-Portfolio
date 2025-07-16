@@ -174,6 +174,16 @@ export default {
             transform: "translateY(-10px)",
           },
         },
+        "name-cloud-glow": {
+          "0%, 100%": {
+            opacity: "0.8",
+            transform: "translate(-50%, -50%) scale(1)",
+          },
+          "50%": {
+            opacity: "1",
+            transform: "translate(-50%, -50%) scale(1.1)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -187,6 +197,7 @@ export default {
         "float-cloud": "float-cloud 20s ease-in-out infinite",
         "float-cloud-reverse": "float-cloud-reverse 25s ease-in-out infinite",
         "float": "float 3s ease-in-out infinite",
+        "name-cloud-glow": "name-cloud-glow 8s ease-in-out infinite",
       },
     },
   },
