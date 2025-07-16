@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Briefcase, GraduationCap, Award } from 'lucide-react';
 import CertificationsCarousel from './CertificationsCarousel';
+import FloatingBubbles from './FloatingBubbles';
 
 interface TimelineItemProps {
   isLeft: boolean;
@@ -119,7 +120,8 @@ const Experience = () => {
   const certifications = [];
 
   return (
-    <section id="experience" className="py-20 px-4">
+    <section id="experience" className="py-20 px-4 relative">
+      <FloatingBubbles section="about" density="light" />
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 

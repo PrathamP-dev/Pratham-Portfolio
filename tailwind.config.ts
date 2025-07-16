@@ -184,6 +184,17 @@ export default {
             transform: "translate(-50%, -50%) scale(1.1)",
           },
         },
+        "float-bubble": {
+          "0%, 100%": {
+            transform: "translateY(0px) rotate(0deg)",
+          },
+          "33%": {
+            transform: "translateY(-15px) rotate(120deg)",
+          },
+          "66%": {
+            transform: "translateY(8px) rotate(240deg)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -198,6 +209,7 @@ export default {
         "float-cloud-reverse": "float-cloud-reverse 25s ease-in-out infinite",
         "float": "float 3s ease-in-out infinite",
         "name-cloud-glow": "name-cloud-glow 8s ease-in-out infinite",
+        "float-bubble": "float-bubble 6s ease-in-out infinite",
       },
     },
   },

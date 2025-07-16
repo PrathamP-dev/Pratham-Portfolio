@@ -170,6 +170,53 @@
     z-index: 1;
   }
   
+  .floating-tech-bubble {
+    position: absolute;
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(251, 146, 60, 0.1));
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(249, 115, 22, 0.3);
+    border-radius: 50%;
+    box-shadow: 
+      0 8px 32px rgba(249, 115, 22, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    animation: float-bubble 6s ease-in-out infinite;
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+  
+  .floating-tech-bubble:hover {
+    transform: scale(1.2);
+    box-shadow: 
+      0 12px 40px rgba(249, 115, 22, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-color: rgba(249, 115, 22, 0.5);
+  }
+  
+  .bubble-icon {
+    color: rgba(249, 115, 22, 0.8);
+    transition: all 0.3s ease;
+  }
+  
+  .bubble-symbol {
+    position: absolute;
+    color: rgba(251, 146, 60, 0.9);
+    font-size: 0.75rem;
+    font-weight: bold;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+  }
+  
+  .floating-tech-bubble:hover .bubble-icon {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  
+  .floating-tech-bubble:hover .bubble-symbol {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
   .reveal-code {
     position: relative;
     display: inline-block;

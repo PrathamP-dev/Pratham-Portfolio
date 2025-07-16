@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import { ArrowDown, Code, Database, Cloud, Server, FileCode } from 'lucide-react';
+import FloatingBubbles from './FloatingBubbles';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,6 +28,9 @@ const Hero = () => {
       <div className="absolute inset-0 overflow-hidden">
         <div className="name-focused-cloud"></div>
       </div>
+      
+      {/* Enhanced floating bubbles for hero */}
+      <FloatingBubbles section="hero" density="heavy" />
       
       {/* Tech Bubbles */}
       {techBubbles.map((bubble, index) => (
