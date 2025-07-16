@@ -124,6 +124,59 @@
     @apply absolute rounded-full bg-white/5 backdrop-blur-lg animate-pulse-slow;
   }
   
+  .tech-bubble-enhanced {
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.1), rgba(251, 146, 60, 0.1));
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(249, 115, 22, 0.2);
+    box-shadow: 0 8px 32px rgba(249, 115, 22, 0.1);
+  }
+  
+  .glass-name-effect {
+    position: relative;
+    z-index: 10;
+    padding: 0.5rem 1rem;
+    backdrop-filter: blur(15px);
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.1), rgba(251, 146, 60, 0.05));
+    border-radius: 16px;
+    border: 1px solid rgba(249, 115, 22, 0.2);
+    box-shadow: 
+      0 8px 32px rgba(249, 115, 22, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .glass-name-effect:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+      0 12px 40px rgba(249, 115, 22, 0.25),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-color: rgba(249, 115, 22, 0.3);
+  }
+  
+  .gradient-cloud {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 20%, rgba(249, 115, 22, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 70% 80%, rgba(251, 146, 60, 0.1) 0%, transparent 50%);
+    animation: float-cloud 20s ease-in-out infinite;
+    z-index: 1;
+  }
+  
+  .gradient-cloud-2 {
+    position: absolute;
+    top: -30%;
+    right: -30%;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle at 60% 40%, rgba(249, 115, 22, 0.08) 0%, transparent 60%),
+                radial-gradient(circle at 20% 70%, rgba(251, 146, 60, 0.05) 0%, transparent 60%);
+    animation: float-cloud-reverse 25s ease-in-out infinite;
+    z-index: 1;
+  }
+  
   .reveal-code {
     position: relative;
     display: inline-block;
