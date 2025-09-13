@@ -61,16 +61,6 @@ const Skills = () => {
       ]
     },
     {
-      title: "Product Skills",
-      skills: [
-        { name: "User Research", icon: "https://cdn-icons-png.flaticon.com/512/2920/2920349.png" },
-        { name: "Agile/Scrum", icon: "https://cdn-icons-png.flaticon.com/512/6172/6172531.png" },
-        { name: "Design Thinking", icon: "https://cdn-icons-png.flaticon.com/512/3281/3281289.png" },
-        { name: "Product Specification", icon: "https://cdn-icons-png.flaticon.com/512/1055/1055669.png" },
-        { name: "Roadmapping", icon: "https://cdn-icons-png.flaticon.com/512/1055/1055644.png" },
-      ]
-    },
-    {
       title: "DevOps & Cloud",
       skills: [
         { name: "GCP", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" },
@@ -92,6 +82,7 @@ const Skills = () => {
         { name: "IntelliJ", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" },
         { name: "Terragrunt", icon: "https://cdn-icons-png.flaticon.com/512/919/919853.png" },
         { name: "Terratest", icon: "https://cdn-icons-png.flaticon.com/512/2920/2920277.png" },
+        { name: "Agile/Scrum", icon: "https://cdn-icons-png.flaticon.com/512/6172/6172531.png" },
       ]
     },
     {
@@ -123,15 +114,6 @@ const Skills = () => {
         { name: "SQLite", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" },
       ]
     },
-    {
-      title: "Soft Skills",
-      skills: [
-        { name: "Collaboration", icon: "https://cdn-icons-png.flaticon.com/512/1055/1055669.png" },
-        { name: "Communication", icon: "https://cdn-icons-png.flaticon.com/512/2920/2920349.png" },
-        { name: "Leadership", icon: "https://cdn-icons-png.flaticon.com/512/3522/3522109.png" },
-        { name: "Problem Solving", icon: "https://cdn-icons-png.flaticon.com/512/3281/3281289.png" },
-      ]
-    }
   ];
 
   return (
