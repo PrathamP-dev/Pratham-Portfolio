@@ -68,7 +68,7 @@ const Skills = () => {
         { name: "Terraform", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" },
         { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
         { name: "Kubernetes", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
-        { name: "CI/CD", icon: "https://cdn-icons-png.flaticon.com/512/6557/6557054.png" },
+        { name: "CI/CD", icon: "https://cdn-icons-png.flaticon.com/512/2920/2920349.png" },
       ]
     },
     {
@@ -80,8 +80,8 @@ const Skills = () => {
         { name: "Flask", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
         { name: "VS Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
         { name: "IntelliJ", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" },
-        { name: "Terragrunt", icon: "https://cdn-icons-png.flaticon.com/512/919/919853.png" },
-        { name: "Terratest", icon: "https://cdn-icons-png.flaticon.com/512/2920/2920277.png" },
+        { name: "Terragrunt", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" },
+        { name: "Terratest", icon: "https://cdn-icons-png.flaticon.com/512/5968/5968520.png" },
         { name: "Agile/Scrum", icon: "https://cdn-icons-png.flaticon.com/512/6172/6172531.png" },
       ]
     },
@@ -91,7 +91,7 @@ const Skills = () => {
         { name: "LLMs", icon: "https://cdn-icons-png.flaticon.com/512/8637/8637101.png" },
         { name: "Hugging Face", icon: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg" },
         { name: "SGLang", icon: "https://github.com/sgl-project/sglang/raw/main/assets/logo.png" },
-        { name: "OpenRouter", icon: "https://cdn-icons-png.flaticon.com/512/2920/2920277.png" },
+        { name: "OpenRouter", icon: "https://cdn-icons-png.flaticon.com/512/3281/3281289.png" },
       ]
     },
     {
