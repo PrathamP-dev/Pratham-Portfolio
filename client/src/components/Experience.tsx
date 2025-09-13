@@ -69,6 +69,13 @@ const Experience = () => {
 
   const workExperience = [
     {
+      title: "Program Associate – Tech Infra/DevOps",
+      subtitle: "Myristika Sustainable Solutions",
+      date: "Jun 2025 – Sep 2025",
+      description: "Defined and implemented a news aggregation product: researched workflows, validated goals, and built a system using AI summarization and automation tools, improving team productivity by 70%. Designed and deployed the organization's official website, aligning product requirements with business goals to establish online presence. Collaborated cross-functionally and prepared technical documentation (system workflows, API references, deployment guides) for seamless handover.",
+      icon: <Briefcase size={20} className="text-white" />
+    },
+    {
       title: "DevOps Intern",
       subtitle: "Paytm",
       date: "May 2025 - Jul 2025",

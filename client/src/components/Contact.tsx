@@ -73,13 +73,18 @@ const Contact = () => {
     e.preventDefault();
     
     if (validateForm()) {
-      // Here you would normally send the form data to a server
-      console.log('Form submitted:', formData);
+      // Create mailto link with form data
+      const subject = `Message from ${formData.name}`;
+      const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
+      const mailtoLink = `mailto:prathamp.sharma.02@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      
+      // Open email client
+      window.location.href = mailtoLink;
       
       // Show success message
       toast({
-        title: 'Message sent!',
-        description: "Thanks for reaching out. I'll get back to you soon.",
+        title: 'Email draft created!',
+        description: "Your email client should now open with the message pre-filled.",
         variant: 'default',
       });
       

@@ -78,7 +78,7 @@ const About = () => {
 
             <div className="flex">
               <a 
-                href="https://drive.google.com/file/d/1RXzJ47pliZoAbnqNi8hawG3mLfJl664q/view?usp=sharing" 
+                href="https://drive.google.com/file/d/1bB6Yk6BKA7YC_tOmBaKA4j-bWThilpiz/view?usp=sharing" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 px-5 py-3 rounded-full gradient-bg text-white font-medium transition-transform hover:scale-105"

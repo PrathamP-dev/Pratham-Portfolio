@@ -6,10 +6,11 @@ interface ProjectCardProps {
   description: string;
   githubUrl: string;
   liveUrl?: string;
+  edgeUrl?: string;
   delay: number;
 }
 
-const ProjectCard = ({ title, description, githubUrl, liveUrl, delay }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, githubUrl, liveUrl, edgeUrl, delay }: ProjectCardProps) => {
   const [isVisible, setIsVisible] = useState(false);
   
   useEffect(() => {
@@ -46,9 +47,23 @@ const ProjectCard = ({ title, description, githubUrl, liveUrl, delay }: ProjectC
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 gradient-bg hover:opacity-90 rounded-lg transition-all duration-300 text-sm"
+            data-testid={`link-firefox-${title.toLowerCase().replace(/\s+/g, '-')}`}
           >
             <ExternalLink size={16} />
-            Live Demo
+            Firefox
+          </a>
+        )}
+        
+        {edgeUrl && (
+          <a 
+            href={edgeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition-all duration-300 text-sm"
+            data-testid={`link-edge-${title.toLowerCase().replace(/\s+/g, '-')}`}
+          >
+            <ExternalLink size={16} />
+            Edge
           </a>
         )}
       </div>
@@ -78,9 +93,10 @@ const Projects = () => {
   const projects = [
     {
       title: "Bandhutva — LinkedIn Connection Manager",
-      description: "Browser extension enabling bulk accept/reject of LinkedIn connection requests with intuitive UI enhancements.",
+      description: "Browser extension enabling bulk accept/reject of LinkedIn connection requests with intuitive UI enhancements. Available for Firefox and Microsoft Edge.",
       githubUrl: "https://github.com/PrathamP-dev/Bandhutva",
       liveUrl: "https://addons.mozilla.org/en-US/firefox/addon/bandhutva/",
+      edgeUrl: "https://microsoftedge.microsoft.com/addons/detail/bandhutva/holdnfdoggehnkgemgbmbbjnomolffke"
     },
     {
       title: "Vanasandesh.AI — Forestry & Wildlife Tech News Aggregator",

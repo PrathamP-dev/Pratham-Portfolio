@@ -51,64 +51,85 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      title: "Programming Languages",
+      title: "Programming",
       skills: [
         { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
         { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-        { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-        { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
         { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
         { name: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
-        { name: "Bash", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" },
+        { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
       ]
     },
     {
-      title: "Cloud & Infrastructure",
+      title: "Product Skills",
+      skills: [
+        { name: "User Research", icon: "https://cdn-icons-png.flaticon.com/512/2920/2920349.png" },
+        { name: "Agile/Scrum", icon: "https://cdn-icons-png.flaticon.com/512/6172/6172531.png" },
+        { name: "Design Thinking", icon: "https://cdn-icons-png.flaticon.com/512/3281/3281289.png" },
+        { name: "Product Specification", icon: "https://cdn-icons-png.flaticon.com/512/1055/1055669.png" },
+        { name: "Roadmapping", icon: "https://cdn-icons-png.flaticon.com/512/1055/1055644.png" },
+      ]
+    },
+    {
+      title: "DevOps & Cloud",
       skills: [
         { name: "GCP", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" },
         { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" },
+        { name: "Terraform", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" },
         { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
         { name: "Kubernetes", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
-        { name: "Terraform", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" },
-        { name: "DevOps", icon: "https://cdn-icons-png.flaticon.com/512/3281/3281289.png" },
-        { name: "GitLab", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" },
+        { name: "CI/CD", icon: "https://cdn-icons-png.flaticon.com/512/6557/6557054.png" },
       ]
     },
     {
-      title: "Development Tools",
+      title: "Frameworks & Tools",
       skills: [
         { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
         { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
-        { name: "VS Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
-        { name: "IntelliJ IDEA", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" },
-        { name: "Cursor IDE", icon: "https://cursor.sh/brand/logo.svg" },
-        { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
-      ]
-    },
-    {
-      title: "Frameworks & Libraries",
-      skills: [
-        { name: "Flask", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
-        { name: "Tailwind CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" },
-        { name: "PyTorch", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
-      ]
-    },
-    {
-      title: "Databases & AI/ML",
-      skills: [
-        { name: "SQLite", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" },
         { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
+        { name: "Flask", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
+        { name: "VS Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+        { name: "IntelliJ", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" },
+        { name: "Terragrunt", icon: "https://cdn-icons-png.flaticon.com/512/919/919853.png" },
+        { name: "Terratest", icon: "https://cdn-icons-png.flaticon.com/512/2920/2920277.png" },
+      ]
+    },
+    {
+      title: "Machine Learning",
+      skills: [
+        { name: "LLMs", icon: "https://cdn-icons-png.flaticon.com/512/8637/8637101.png" },
         { name: "Hugging Face", icon: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg" },
         { name: "SGLang", icon: "https://github.com/sgl-project/sglang/raw/main/assets/logo.png" },
-        { name: "Large Language Models", icon: "https://cdn-icons-png.flaticon.com/512/8637/8637101.png" },
+        { name: "OpenRouter", icon: "https://cdn-icons-png.flaticon.com/512/2920/2920277.png" },
       ]
     },
     {
-      title: "Operating Systems",
+      title: "Automation",
       skills: [
-        { name: "Windows", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" },
-        { name: "Ubuntu Linux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" },
-        { name: "MacOS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" },
+        { name: "Opal by Google", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" },
+        { name: "n8n", icon: "https://avatars.githubusercontent.com/u/45487711?s=200&v=4" },
+      ]
+    },
+    {
+      title: "Design",
+      skills: [
+        { name: "Low-Level Design (LLD)", icon: "https://cdn-icons-png.flaticon.com/512/3281/3281289.png" },
+        { name: "UI/UX Prototyping", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+      ]
+    },
+    {
+      title: "Databases",
+      skills: [
+        { name: "SQLite", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" },
+      ]
+    },
+    {
+      title: "Soft Skills",
+      skills: [
+        { name: "Collaboration", icon: "https://cdn-icons-png.flaticon.com/512/1055/1055669.png" },
+        { name: "Communication", icon: "https://cdn-icons-png.flaticon.com/512/2920/2920349.png" },
+        { name: "Leadership", icon: "https://cdn-icons-png.flaticon.com/512/3522/3522109.png" },
+        { name: "Problem Solving", icon: "https://cdn-icons-png.flaticon.com/512/3281/3281289.png" },
       ]
     }
   ];
