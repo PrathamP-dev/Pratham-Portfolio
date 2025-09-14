@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from 'react';
+import cicdLogo from '@assets/image_1757840893850.png';
 
 interface SkillCardProps {
   name: string;
@@ -70,7 +71,7 @@ const Skills = () => {
         { name: "Terraform", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" },
         { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
         { name: "Kubernetes", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
-        { name: "CI/CD", icon: "https://cdn-icons-png.flaticon.com/512/2920/2920277.png" },
+        { name: "CI/CD", icon: cicdLogo },
       ]
     },
     {
