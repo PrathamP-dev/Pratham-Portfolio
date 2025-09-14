@@ -4,6 +4,7 @@ import cicdLogo from '@assets/pngkey.com-cycle-icon-png-4532037_1757842273183.pn
 import n8nLogo from '@assets/pngwing.com_1757842099653.png';
 import openRouterLogo from '@assets/image_1757842364674.png';
 import terragruntLogo from '@assets/Terragrunt Logo Color Dark_1757842475476.png';
+import terratestLogo from '@assets/451c24614aece67849fd62d0432d77ecd00735c6_1757842713111.png';
 
 interface SkillCardProps {
   name: string;
@@ -87,7 +88,7 @@ const Skills = () => {
         { name: "VS Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
         { name: "IntelliJ", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" },
         { name: "Terragrunt", icon: terragruntLogo },
-        { name: "Terratest", icon: "https://cdn-icons-png.flaticon.com/512/2620/2620446.png" },
+        { name: "Terratest", icon: terratestLogo },
         { name: "Agile/Scrum", icon: "https://cdn-icons-png.flaticon.com/512/6172/6172531.png" },
       ]
     },
