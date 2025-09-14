@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
-import cicdLogo from '@assets/image_1757840893850.png';
+import cicdLogo from '@assets/image_1757841340804.png';
+import openRouterLogo from '@assets/image_1757841276006.png';
 
 interface SkillCardProps {
   name: string;
@@ -94,7 +95,7 @@ const Skills = () => {
         { name: "LLMs", icon: "https://cdn-icons-png.flaticon.com/512/8637/8637101.png" },
         { name: "Hugging Face", icon: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg" },
         { name: "SGLang", icon: "https://github.com/sgl-project/sglang/raw/main/assets/logo.png" },
-        { name: "OpenRouter", icon: "https://cdn-icons-png.flaticon.com/512/1055/1055645.png" },
+        { name: "OpenRouter", icon: openRouterLogo },
         { name: "PyTorch", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
       ]
     },
