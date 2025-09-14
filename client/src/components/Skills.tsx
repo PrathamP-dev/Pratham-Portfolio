@@ -2,6 +2,8 @@
 import { useState, useEffect } from 'react';
 import cicdLogo from '@assets/pngkey.com-cycle-icon-png-4532037_1757842273183.png';
 import n8nLogo from '@assets/pngwing.com_1757842099653.png';
+import openRouterLogo from '@assets/image_1757842364674.png';
+import terragruntLogo from '@assets/Terragrunt Logo Color Dark_1757842475476.png';
 
 interface SkillCardProps {
   name: string;
@@ -84,7 +86,7 @@ const Skills = () => {
         { name: "Flask", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
         { name: "VS Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
         { name: "IntelliJ", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" },
-        { name: "Terragrunt", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" },
+        { name: "Terragrunt", icon: terragruntLogo },
         { name: "Terratest", icon: "https://cdn-icons-png.flaticon.com/512/2620/2620446.png" },
         { name: "Agile/Scrum", icon: "https://cdn-icons-png.flaticon.com/512/6172/6172531.png" },
       ]
@@ -95,7 +97,7 @@ const Skills = () => {
         { name: "LLMs", icon: "https://cdn-icons-png.flaticon.com/512/8637/8637101.png" },
         { name: "Hugging Face", icon: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg" },
         { name: "SGLang", icon: "https://github.com/sgl-project/sglang/raw/main/assets/logo.png" },
-        { name: "OpenRouter", icon: "https://seeklogo.com/images/o/openrouter-logo-72A8D07E93-seeklogo.com.png" },
+        { name: "OpenRouter", icon: openRouterLogo },
         { name: "PyTorch", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
       ]
     },
