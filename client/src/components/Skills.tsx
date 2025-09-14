@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
-import cicdLogo from '@assets/image_1757841340804.png';
+import cicdLogo from '@assets/pngkey.com-cycle-icon-png-4532037_1757842273183.png';
+import n8nLogo from '@assets/pngwing.com_1757842099653.png';
 
 interface SkillCardProps {
   name: string;
@@ -102,7 +103,7 @@ const Skills = () => {
       title: "Automation",
       skills: [
         { name: "Opal by Google", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" },
-        { name: "n8n", icon: "https://upload.wikimedia.org/wikipedia/commons/0/0a/N8n-logo-new.svg" },
+        { name: "n8n", icon: n8nLogo },
       ]
     },
     {
