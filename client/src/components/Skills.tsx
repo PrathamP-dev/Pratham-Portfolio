@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import cicdLogo from '@assets/image_1757841340804.png';
 import openRouterLogo from '@assets/image_1757841276006.png';
+import terragruntLogo from '@assets/image_1757841367251.png';
 
 interface SkillCardProps {
   name: string;
@@ -84,8 +85,8 @@ const Skills = () => {
         { name: "Flask", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
         { name: "VS Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
         { name: "IntelliJ", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" },
-        { name: "Terragrunt", icon: "https://cdn-icons-png.flaticon.com/512/1055/1055666.png" },
-        { name: "Terratest", icon: "https://cdn-icons-png.flaticon.com/512/1055/1055646.png" },
+        { name: "Terragrunt", icon: terragruntLogo },
+        { name: "Terratest", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" },
         { name: "Agile/Scrum", icon: "https://cdn-icons-png.flaticon.com/512/6172/6172531.png" },
       ]
     },
@@ -103,7 +104,7 @@ const Skills = () => {
       title: "Automation",
       skills: [
         { name: "Opal by Google", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" },
-        { name: "n8n", icon: "https://avatars.githubusercontent.com/u/45487711?s=200&v=4" },
+        { name: "n8n", icon: "https://lobehub.com/icons/n8n.svg" },
       ]
     },
     {
