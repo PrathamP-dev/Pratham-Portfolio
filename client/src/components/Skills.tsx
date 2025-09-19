@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import cicdLogo from '@assets/pngkey.com-cycle-icon-png-4532037_1757842273183.png';
 import n8nLogo from '@assets/pngwing.com_1757842099653.png';
-import openRouterLogo from '@assets/image_1757842364674.png';
+import openRouterLogo from '@assets/openrouter_1758265098408.png';
 import terragruntLogo from '@assets/Terragrunt Logo Color Dark_1757842475476.png';
 import terratestLogo from '@assets/451c24614aece67849fd62d0432d77ecd00735c6_1757842713111.png';
 
@@ -114,6 +114,7 @@ const Skills = () => {
       skills: [
         { name: "Low-Level Design (LLD)", icon: "https://cdn-icons-png.flaticon.com/512/3281/3281289.png" },
         { name: "UI/UX Prototyping", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+        { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
       ]
     },
     {
