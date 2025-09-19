@@ -113,7 +113,7 @@ const Skills = () => {
       title: "Design",
       skills: [
         { name: "Low-Level Design (LLD)", icon: "https://cdn-icons-png.flaticon.com/512/3281/3281289.png" },
-        { name: "UI/UX Prototyping", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+        { name: "UI/UX Prototyping", icon: "https://cdn-icons-png.flaticon.com/512/3281/3281307.png" },
         { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
       ]
     },
