@@ -5,6 +5,7 @@ import n8nLogo from '@assets/pngwing.com_1757842099653.png';
 import openRouterLogo from '@assets/openrouter_1758265098408.png';
 import terragruntLogo from '@assets/Terragrunt Logo Color Dark_1757842475476.png';
 import terratestLogo from '@assets/451c24614aece67849fd62d0432d77ecd00735c6_1757842713111.png';
+import uiuxIcon from '@assets/pngaaa.com-4945239_1758266394495.png';
 
 interface SkillCardProps {
   name: string;
@@ -29,7 +30,9 @@ const SkillCard = ({ name, icon, delay }: SkillCardProps) => {
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
     >
-      <img src={icon} alt={name} className="w-12 h-12 object-contain mb-3" />
+      <div className="size-12 aspect-square flex items-center justify-center mb-3">
+        <img src={icon} alt={name} className="max-w-10 max-h-10 object-contain" />
+      </div>
       <p>{name}</p>
     </div>
   );
@@ -113,7 +116,7 @@ const Skills = () => {
       title: "Design",
       skills: [
         { name: "Low-Level Design (LLD)", icon: "https://cdn-icons-png.flaticon.com/512/3281/3281289.png" },
-        { name: "UI/UX Prototyping", icon: "https://cdn-icons-png.flaticon.com/512/2010/2010962.png" },
+        { name: "UI/UX Prototyping", icon: uiuxIcon },
         { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
       ]
     },
