@@ -126,8 +126,8 @@ const Skills = () => {
         { name: "SQLite", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" },
         { name: "Supabase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" },
         { name: "DynamoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dynamodb/dynamodb-original.svg" },
-        { name: "Aurora", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" },
-        { name: "Amazon RDS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" },
+        { name: "Aurora", icon: "https://icon.icepanel.io/AWS/svg/Database/Aurora.svg" },
+        { name: "Amazon RDS", icon: "https://icon.icepanel.io/AWS/svg/Database/RDS.svg" },
       ]
     },
   ];
