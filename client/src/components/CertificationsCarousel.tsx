@@ -2,6 +2,8 @@
 import { useState, useEffect, useCallback } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import awsCloudFoundations from '@assets/AWS_Academy_Graduate_-_Cloud_Foundations_1765733166003.png';
+import awsCloudEssentials from '@assets/aws-knowledge-cloud-essentials-training-badge_1765733166005.png';
 
 interface CertificationsCarouselProps {
   isVisible: boolean;
@@ -87,8 +89,8 @@ const CertificationsCarousel = ({ isVisible }: CertificationsCarouselProps) => {
 
   // Certification images
   const certificationImages = [
-    "/assets/AWS_Academy_Graduate_-_Cloud_Foundations_1765732441555.png",
-    "/assets/aws-knowledge-cloud-essentials-training-badge_1765732441558.png",
+    awsCloudFoundations,
+    awsCloudEssentials,
     "/lovable-uploads/emotional-intelligence-cert.png",
     "/lovable-uploads/e781d855-01d8-48eb-9cb6-ca9f1f38dce3.png",
     "/lovable-uploads/f83d624f-26c8-4438-89b8-0d80152b0bcd.png",
