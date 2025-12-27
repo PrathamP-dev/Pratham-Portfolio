@@ -7,10 +7,11 @@ interface ProjectCardProps {
   githubUrl: string;
   liveUrl?: string;
   edgeUrl?: string;
+  patent?: string;
   delay: number;
 }
 
-const ProjectCard = ({ title, description, githubUrl, liveUrl, edgeUrl, delay }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, githubUrl, liveUrl, edgeUrl, patent, delay }: ProjectCardProps) => {
   const [isVisible, setIsVisible] = useState(false);
   
   useEffect(() => {
@@ -29,6 +30,12 @@ const ProjectCard = ({ title, description, githubUrl, liveUrl, edgeUrl, delay }:
     >
       <h3 className="text-xl font-semibold mb-3 gradient-text">{title}</h3>
       <p className="text-gray-300 mb-4 leading-relaxed">{description}</p>
+      
+      {patent && (
+        <p className="text-green-400/90 text-sm mb-4 font-medium">
+          Patent Published • App No: {patent}
+        </p>
+      )}
       
       <div className="flex gap-4">
         <a 
@@ -91,6 +98,17 @@ const Projects = () => {
   }, []);
 
   const projects = [
+    {
+      title: "SheGuardian — Women's Safety App",
+      description: "Real-time, location-based safety app with SOS alerts, live GPS tracking, and emergency escalation. Geo-indexed alerting using Haversine + Geohash and dual notifications (FCM + SMS).",
+      githubUrl: "https://github.com/PrathamP-dev/SheGuardian",
+      patent: "202511096159"
+    },
+    {
+      title: "LexSight AI — AI-Powered Legal Assistant",
+      description: "AI-driven platform for legal document extraction, summarization, and risk analysis using OCR + LLMs. Secure, scalable web application built with Next.js, TypeScript, and Supabase.",
+      githubUrl: "https://github.com/PrathamP-dev/LexSight_AI",
+    },
     {
       title: "Bandhutva — LinkedIn Connection Manager",
       description: "Browser extension enabling bulk accept/reject of LinkedIn connection requests with intuitive UI enhancements. Available for Firefox and Microsoft Edge.",
