@@ -72,7 +72,7 @@ const Experience = () => {
       title: "Product Engineer Intern",
       subtitle: "Cadence Design Systems",
       date: "Jan 2026 – Present",
-      description: "Building DNA (Design Netlist Automation), a Python-based tool to automate PCB netlist comparison within the Allegro X platform, reducing manual verification effort by 85%. Packaging the prototype into a production-ready feature for the Allegro X ecosystem.",
+      description: "Build DNA (Design Netlist Automation), a Python-based tool to automate PCB netlist comparison within the Allegro X platform, reducing manual verification effort by 85%. Packaging the prototype into a production-ready feature for the Allegro X ecosystem.",
       icon: <Briefcase size={20} className="text-white" />
     },
     {
