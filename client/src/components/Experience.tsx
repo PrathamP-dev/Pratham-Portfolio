@@ -69,6 +69,13 @@ const Experience = () => {
 
   const workExperience = [
     {
+      title: "Product Engineer Intern",
+      subtitle: "Cadence Design Systems",
+      date: "Jan 2026 – Present",
+      description: "Explored the Allegro X Design Platform to understand PCB design workflows, system architecture, and internal data structures across the EDA toolchain. Engineering DNA (Design Netlist Automation), a Python-based automation system that extracts and compares PCB netlists and pin mappings between reference and target designs. Automated identification and tracing of design-level differences across PCB layouts, reducing manual verification effort for engineers by 85%. Packaging the prototype into a production-ready software feature for integration within the Allegro X ecosystem.",
+      icon: <Briefcase size={20} className="text-white" />
+    },
+    {
       title: "Program Associate – Tech Infra/DevOps",
       subtitle: "Myristika Sustainable Solutions",
       date: "Jun 2025 – Sep 2025",
